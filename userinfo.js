@@ -1,6 +1,6 @@
 /**
- * Pizza delivery prompt example
- * run example by writing `node pizza.js` in your console
+ * Inrhythm Engineers Information
+ *
  */
 
 "use strict";
