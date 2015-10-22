@@ -4,6 +4,7 @@
   "description": "our family members info",
   "main": "index.js",
   "scripts": {
+    "lint": "jshint **.js",
     "add-user": "node userinfo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
