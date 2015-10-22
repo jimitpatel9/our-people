@@ -1,11 +1,11 @@
 # Our-People
 ## Usage
-
+Step 1
 ```
 npm install
 
 ```
-Next Step
+Step 2
 
 ```
 npm run add-user
