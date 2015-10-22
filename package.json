@@ -1,0 +1,18 @@
+{
+  "name": "inrhythm",
+  "version": "1.0.0",
+  "description": "our family members info",
+  "main": "index.js",
+  "scripts": {
+    "add-user": "node userinfo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^2.2.3"
+  },
+  "devDependencies": {
+    "inquirer": "^0.11.0"
+  }
+}
