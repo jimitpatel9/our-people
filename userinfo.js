@@ -2,8 +2,9 @@
  * Inrhythm Engineers Information
  *
  */
-
+/*jslint node: true */
 "use strict";
+
 var fs = require('fs');
 var inquirer = require("inquirer");
 
@@ -166,10 +167,10 @@ var hr_questions =[
 ];
 
 inquirer.prompt( questions, function( answers ) {
-
+    var outputFilename;
     if(answers.job_title){
         inquirer.prompt(engg_questions, function(engineer_data){
-            var outputFilename = 'engineers/' + engineer_data.name.replace(/\s/gi, "_") + ".json";
+            outputFilename = 'engineers/' + engineer_data.name.replace(/\s/gi, "_") + ".json";
             fs.writeFile(outputFilename, JSON.stringify(engineer_data, null, 4), function(err) {
                 if(err) {
                     console.log(err);
@@ -178,11 +179,11 @@ inquirer.prompt( questions, function( answers ) {
                 }
             });
 
-        })
+        });
     }
     else{
         inquirer.prompt(hr_questions, function(hr_data){
-            var outputfile = 'hr/' + hr_data.name.replace(/\s/gi, "_") + ".json";
+            outputFilename = 'hr/' + hr_data.name.replace(/\s/gi, "_") + ".json";
             fs.writeFile(outputFilename, JSON.stringify(hr_data, null, 4), function(err) {
                 if(err) {
                     console.log(err);
@@ -191,6 +192,6 @@ inquirer.prompt( questions, function( answers ) {
                 }
             });
 
-        })
+        });
     }
 });
