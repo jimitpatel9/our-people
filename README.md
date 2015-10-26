@@ -29,7 +29,7 @@ git add -A
 ```
 ### Step 5
 ```
-git commit -m "Your Name added his/her info"
+git commit -m "Jimit Patel added his info"
 ```
 ### Step 6
 ```
