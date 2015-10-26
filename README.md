@@ -25,7 +25,7 @@ JSON saved to engineers/Jimit_Patel.json<br />
 
 ### Step 4
 ```
-git add -A
+git add -u
 ```
 ### Step 5
 ```
