@@ -1,15 +1,15 @@
 # Our-People
 ## Usage
-Step 1
+### Step 1
 ```
 npm install
 ```
-Step 2
+### Step 2
 
 ```
 npm run add-user
 ```
-Step 3
+### Step 3
 
 Hi, welcome to InRhythm <br />
 
@@ -23,13 +23,17 @@ Hi, welcome to InRhythm <br />
 
 JSON saved to engineers/Jimit_Patel.json<br />
 
-Step 4
+### Step 4
 ```
 git add -A
 ```
-Step 5
+### Step 5
 ```
-git commit -m "Your Name added his info"
+git commit -m "Your Name added his/her info"
+```
+### Step 6
+```
+git
 ```
 
 # License
