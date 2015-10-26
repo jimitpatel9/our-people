@@ -9,6 +9,24 @@ Step 2
 ```
 npm run add-user
 ```
+Step 3
+
+```
+
+Hi, welcome to InRhythm 
+
+** What is your Name ?** Jimit Patel
+** What's your age ?** 24
+** What's your phine number ?** 2013770000
+** Please enter the gravatar link :-** https://gravatar.com/jimit
+** Please enter your twitter handle :-** jimitpatel99
+** Please enter your github handle :-** jimitpatel9
+** Please enter your linkedin profile link :-** https://www.linkedin.com/in/pateljimit
+
+JSON saved to engineers/Jimit_Patel.json
+```
+Step 4
+
 # License
 The MIT License (MIT)
 
