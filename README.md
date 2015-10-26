@@ -32,9 +32,9 @@ git add -u
 git commit -m "Jimit Patel added his info"
 ```
 ### Step 6
-```
-git
-```
+**Make a pull Request**
+
+### Thank You
 
 # License
 The MIT License (MIT)
