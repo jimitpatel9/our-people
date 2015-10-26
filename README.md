@@ -11,8 +11,6 @@ npm run add-user
 ```
 Step 3
 
-```
-
 Hi, welcome to InRhythm 
 
 ** What is your Name ?** Jimit Patel
@@ -24,8 +22,15 @@ Hi, welcome to InRhythm
 ** Please enter your linkedin profile link :-** https://www.linkedin.com/in/pateljimit
 
 JSON saved to engineers/Jimit_Patel.json
-```
+
 Step 4
+```
+git add -A
+```
+Step 5
+```
+git commit -m "Your Name added his info"
+```
 
 # License
 The MIT License (MIT)
