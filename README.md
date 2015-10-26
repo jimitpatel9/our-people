@@ -32,7 +32,9 @@ git add -u
 git commit -m "Jimit Patel added his info"
 ```
 ### Step 6
+```
 **Make a pull Request**
+```
 
 ### Thank You
 
