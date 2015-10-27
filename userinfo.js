@@ -83,8 +83,9 @@ inquirer.prompt( start, function( answers ) {
                                         name: "phone",
                                         message:  "What's your phone number (Existing : " + temp.phone + ") ?",
                                         validate: function( value ) {
+                                            var pass;
                                             if(value){
-                                                var pass = value.match(/^([01]{1})?[\-\.\s]?\(?(\d{3})\)?[\-\.\s]?(\d{3})[\-\.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
+                                                pass = value.match(/^([01]{1})?[\-\.\s]?\(?(\d{3})\)?[\-\.\s]?(\d{3})[\-\.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
                                                 if (pass) {
                                                     return true;
                                                 } else {
@@ -92,7 +93,7 @@ inquirer.prompt( start, function( answers ) {
                                                 }
                                             }
                                             else{
-                                                var pass = temp.phone.match(/^([01]{1})?[\-\.\s]?\(?(\d{3})\)?[\-\.\s]?(\d{3})[\-\.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
+                                                pass = temp.phone.match(/^([01]{1})?[\-\.\s]?\(?(\d{3})\)?[\-\.\s]?(\d{3})[\-\.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
                                                 if (pass) {
                                                     return true;
                                                 } else {
@@ -110,7 +111,7 @@ inquirer.prompt( start, function( answers ) {
                                     }
                                 );
                 inquirer.prompt(questions,function(ans){
-                    ans['name']=answers.name;
+                    ans.name = answers.name;
                     fs.writeFile(outputFilename, JSON.stringify(ans, null, 4), function(err) {
                         if(err) {
                             console.log(err);
@@ -140,7 +141,7 @@ inquirer.prompt( start, function( answers ) {
                     }
                 });
             inquirer.prompt(questions,function(ans){
-                ans['name']=answers.name;
+                ans.name = answers.name;
                 fs.writeFile(outputFilename, JSON.stringify(ans, null, 4), function(err) {
                     if(err) {
                         console.log(err);
@@ -149,6 +150,6 @@ inquirer.prompt( start, function( answers ) {
                     }
                 });
             });
-        };
+        }
     });
 });
