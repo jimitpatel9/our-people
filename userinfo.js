@@ -129,7 +129,7 @@ inquirer.prompt( start, function( answers ) {
                 {
                     type: "input",
                     name: "phone",
-                    message:  "What's your phone number " + prev_phone + "?",
+                    message:  "What's your phone number ?",
                     validate: function( value ) {
                         var pass = value.match(/^([01]{1})?[\-\.\s]?\(?(\d{3})\)?[\-\.\s]?(\d{3})[\-\.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
                         if (pass) {
